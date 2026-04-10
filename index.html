@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alejandro Pena-Bello | Energy Systems & Renewable Transition</title>
-  <meta name="description" content="Research, advisory, and consulting on renewable energy systems, storage, flexibility, and grid integration." />
+  <title>Your Name | Renewable Integration, Flexibility, and Grid-Aware Energy Decisions</title>
+  <meta
+    name="description"
+    content="Research, advisory, and applied analysis on renewable integration, storage, electric mobility, flexibility, and grid-aware energy decisions."
+  />
   <style>
     :root {
       --bg: #f7f9fb;
@@ -17,6 +20,7 @@
       --max: 980px;
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -44,6 +48,7 @@
       text-decoration: none;
       margin-left: 1rem;
     }
+    nav a:hover { color: var(--accent); }
     .brand {
       font-weight: 700;
       letter-spacing: 0.02em;
@@ -52,14 +57,14 @@
       padding: 4.5rem 0 3.5rem;
     }
     .hero h1 {
-      font-size: clamp(2rem, 5vw, 3.6rem);
+      font-size: clamp(2rem, 5vw, 3.5rem);
       line-height: 1.1;
       margin: 0 0 1rem;
-      max-width: 12ch;
+      max-width: 13ch;
     }
     .hero p {
       font-size: 1.1rem;
-      max-width: 760px;
+      max-width: 780px;
       color: var(--muted);
       margin: 0 0 1.5rem;
     }
@@ -75,21 +80,34 @@
       text-decoration: none;
       border: 1px solid var(--accent);
       font-weight: 600;
+      transition: 0.2s ease;
     }
     .btn.primary {
       background: var(--accent);
       color: white;
     }
+    .btn.primary:hover {
+      background: var(--accent-2);
+      border-color: var(--accent-2);
+    }
     .btn.secondary {
       color: var(--accent-2);
       background: transparent;
+    }
+    .btn.secondary:hover {
+      background: #ecfdf3;
     }
     section {
       padding: 3rem 0;
     }
     h2 {
-      font-size: 1.6rem;
+      font-size: 1.65rem;
       margin-bottom: 1rem;
+    }
+    .intro {
+      max-width: 760px;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
     }
     .grid {
       display: grid;
@@ -129,6 +147,30 @@
       margin-bottom: 0;
       padding-bottom: 0;
     }
+    .highlight-box {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--accent);
+      border-radius: 14px;
+      padding: 1.2rem 1.2rem 1rem;
+    }
+    .highlight-box p {
+      margin-top: 0;
+      margin-bottom: 0.8rem;
+    }
+    .contact-list a,
+    .project a,
+    .card a,
+    footer a {
+      color: var(--accent-2);
+      text-decoration: none;
+    }
+    .contact-list a:hover,
+    .project a:hover,
+    .card a:hover,
+    footer a:hover {
+      text-decoration: underline;
+    }
     footer {
       border-top: 1px solid var(--line);
       padding: 2rem 0 3rem;
@@ -152,27 +194,27 @@
   <header>
     <div class="wrap">
       <nav>
-        <div class="brand">Alejandro Pena-Bello</div>
+        <div class="brand">Your Name</div>
         <div>
           <a href="#about">About</a>
+          <a href="#decisions">Decisions</a>
           <a href="#work">Work</a>
-          <a href="#services">Services</a>
           <a href="#projects">Projects</a>
+          <a href="#insights">Insights</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
+
       <div class="hero">
-        <h1>Energy systems, flexibility, and renewable integration</h1>
+        <h1>Renewable integration, flexibility, and grid-aware energy decisions</h1>
         <p>
-          I work at the intersection of renewable energy, storage, electric mobility, and power systems. 
-          My focus is on understanding how these elements interact at the local and system level, 
-          and translating that into actionable insights for decision-makers. I support enterprises 
-          and public actors in assessing renewable integration, flexibility options, grid impacts, 
-          and data-driven energy strategies.
+          I work at the intersection of renewable energy, storage, electric mobility, and power systems.
+          My focus is on how these elements interact at building, district, and network level, and how
+          that analysis can support better decisions for enterprises, public actors, and research partners.
         </p>
         <div class="cta">
-          <a class="btn primary" href="mailto:apenab13@gmail.com">Get in touch</a>
-          <a class="btn secondary" href="https://www.linkedin.com/in/alejandro-pena-bello/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn primary" href="mailto:your.email@example.com">Get in touch</a>
+          <a class="btn secondary" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
     </div>
@@ -181,25 +223,48 @@
   <main class="wrap">
     <section id="about">
       <h2>About</h2>
+      <p class="intro">
+        I am a researcher and advisor working on the integration of distributed energy resources,
+        including photovoltaics, battery storage, electric vehicles, and flexibility strategies.
+        My work combines modeling, data analysis, and system-level thinking to address questions
+        related to grid constraints, local energy system design, and the operational value of flexibility.
+      </p>
       <div class="grid grid-2">
         <div class="card">
-          <p>
-            I am a researcher and advisor working on renewable energy integration, storage,
-            flexibility, local energy systems, and data-driven tools for decision support.
-            My work combines modeling, data analysis, and system-level thinking to address 
-            challenges such as grid constraints, flexibility activation, and local energy system design.
+          <h3>What I bring</h3>
+          <p class="small">
+            I bridge advanced technical analysis and practical decision-making. My background includes
+            low-voltage networks, vehicle-to-grid integration, storage, local energy systems, and
+            decision-support tools for energy transition planning.
           </p>
         </div>
         <div class="card">
           <h3>Core topics</h3>
           <ul>
-            <li>Renewable integration and flexibility</li>
-            <li>Battery storage and vehicle-to-grid</li>
-            <li>Low-voltage grids and congestion</li>
-            <li>Energy communities and local markets</li>
-            <li>Decision support tools for the transition</li>
+            <li>Renewable integration and local energy systems</li>
+            <li>Battery storage and flexibility strategies</li>
+            <li>Electric vehicles and vehicle-to-grid</li>
+            <li>Low-voltage networks and congestion</li>
+            <li>Data-driven tools for energy decision-making</li>
           </ul>
         </div>
+      </div>
+    </section>
+
+    <section id="decisions">
+      <h2>What decisions I help inform</h2>
+      <div class="highlight-box">
+        <p>I support organizations facing concrete energy transition decisions, including:</p>
+        <ul>
+          <li>Should we invest in PV, storage, or both?</li>
+          <li>How will electrification, including EVs and heat pumps, affect local constraints and costs?</li>
+          <li>What flexibility options are available, and what is their operational or economic value?</li>
+          <li>How can energy data support better planning, operation, or investment decisions?</li>
+        </ul>
+        <p>
+          My work combines system-level modeling, scenario evaluation, and quantitative analysis to
+          provide clear evidence for these questions.
+        </p>
       </div>
     </section>
 
@@ -208,15 +273,24 @@
       <div class="grid grid-3">
         <div class="card">
           <h3>Research</h3>
-          <p class="small">Development of models and analysis frameworks to understand the interaction between renewables, storage, EVs, and electricity networks.</p>
+          <p class="small">
+            Development of models and analysis frameworks to understand how renewables, storage,
+            EVs, and electricity networks interact under technical and behavioral constraints.
+          </p>
         </div>
         <div class="card">
           <h3>Tools</h3>
-          <p class="small">Design of data-driven tools to support planning, scenario analysis, and decision-making in complex energy systems.</p>
+          <p class="small">
+            Design of data-driven tools to support planning, scenario comparison, and decision-making
+            in distributed and urban energy systems.
+          </p>
         </div>
         <div class="card">
           <h3>Advisory</h3>
-          <p class="small">Support for organizations evaluating renewable adoption, flexibility options, and the impact of electrification on their business.</p>
+          <p class="small">
+            Support for organizations assessing renewable adoption, storage strategies, EV integration,
+            flexibility options, and grid-related impacts.
+          </p>
         </div>
       </div>
     </section>
@@ -227,56 +301,86 @@
         <div class="card">
           <h3>For enterprises</h3>
           <ul>
-            <li>Assessment of renewable integration options</li>
-            <li>Evaluation of storage and flexibility opportunities  </li>
+            <li>Assessment of renewable integration strategies</li>
+            <li>Evaluation of storage and flexibility opportunities</li>
             <li>EV charging and fleet electrification analysis</li>
-            <li>Energy data analysis and scenario comparison </li>
+            <li>Energy data analysis and scenario comparison</li>
           </ul>
         </div>
         <div class="card">
           <h3>For public and research actors</h3>
           <ul>
-            <li>Project design and technical scoping</li>
-            <li>Development of decision-support methodologies </li>
-            <li>Urban and district energy transition studies</li>
-            <li>Translation of technical results for stakeholders  </li>
+            <li>Technical support in project design and evaluation</li>
+            <li>Development of decision-support methodologies</li>
+            <li>Urban and district energy system analysis</li>
+            <li>Translation of technical results for stakeholders</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section id="projects">
-      <h2>Selected current work</h2>
+      <h2>Selected work</h2>
       <div class="card">
         <div class="project">
-          <h3>Renewable Integration</h3>
-          <p class="small">Development of tools for assessing renewable integration and storage strategies at building and district level.</p>
+          <h3>Battery optimization and flexibility analysis</h3>
+          <p class="small">
+            Development of models to quantify the economic and operational value of battery storage
+            under different tariffs, flexibility strategies, and local constraints. This type of work
+            supports decisions on whether and how storage should be deployed.
+          </p>
         </div>
         <div class="project">
-          <h3>V2G preferences</h3>
-          <p class="small">Analysis of EV integration and flexibility in low-voltage networks, including user preferences and system impacts.</p>
+          <h3>EV integration and grid impacts in low-voltage networks</h3>
+          <p class="small">
+            Analysis of EV charging and vehicle-to-grid operation under network constraints and user
+            preferences, with a focus on how electrification affects peak loading, congestion, and
+            flexibility potential.
+          </p>
         </div>
         <div class="project">
-          <h3>Positive Energy Districts</h3>
-          <p class="small">Work on Positive Energy Districts and local energy systems, linking technical modeling with planning and policy perspectives.</p>
+          <h3>Local energy systems and Positive Energy Districts</h3>
+          <p class="small">
+            Work on district-scale energy systems linking technical modeling, planning questions,
+            and transition strategies for local authorities and project partners.
+          </p>
         </div>
+      </div>
+    </section>
+
+    <section id="insights">
+      <h2>Insights</h2>
+      <div class="card">
+        <h3>Why flexibility should be assessed before local grid constraints become critical</h3>
+        <p class="small">
+          Electrification often arrives faster than local network reinforcement. For many organizations,
+          the first question is not only how much PV, storage, or EV charging should be added, but how
+          these choices interact with existing constraints and operating patterns.
+        </p>
+        <p class="small">
+          A short note on this topic is available here:
+          <a href="insight-grid-flexibility.html">Read the insight piece</a>
+        </p>
       </div>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <div class="card">
+      <div class="card contact-list">
         <p>
           If you are interested in collaboration, consulting, speaking, or research partnerships,
-          contact me at <a href="mailto:apenab13@gmail.com">apenab13@gmail.com</a>.
+          feel free to get in touch.
         </p>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">your profile</a></p>
+        <p>GitHub: <a href="https://github.com/alefunxo" target="_blank" rel="noopener noreferrer">alefunxo</a></p>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="wrap">
-      <div>Alejandro Pena-Bello · Energy Systems, Storage, Grids, and Renewable Transition</div>
+      <div>Your Name · Renewable integration, storage, electric mobility, and grid-aware energy decisions</div>
     </div>
   </footer>
 </body>

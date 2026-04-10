@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why flexibility should be assessed before local grid constraints become critical</title>
+  <meta
+    name="description"
+    content="A short note on why flexibility assessment matters before local grid constraints become critical."
+  />
+  <style>
+    :root {
+      --bg: #f7f9fb;
+      --text: #1d2939;
+      --muted: #475467;
+      --line: #d0d5dd;
+      --card: #ffffff;
+      --accent: #0f766e;
+      --accent-2: #134e4a;
+      --max: 860px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .wrap {
+      width: min(var(--max), calc(100% - 2rem));
+      margin: 0 auto;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      background: #ffffff;
+    }
+    .top {
+      padding: 1rem 0;
+      font-size: 0.95rem;
+    }
+    .top a {
+      color: var(--accent-2);
+      text-decoration: none;
+    }
+    .top a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem 0 3rem;
+    }
+    article {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 1.5rem;
+    }
+    h1 {
+      line-height: 1.2;
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+    }
+    h2 {
+      margin-top: 1.75rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+    p {
+      margin: 0 0 1rem;
+    }
+    ul {
+      margin: 0.5rem 0 1rem;
+      padding-left: 1.2rem;
+    }
+    footer {
+      padding: 1.5rem 0 3rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <a href="index.html">← Back to homepage</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article>
+      <h1>Why flexibility should be assessed before local grid constraints become critical</h1>
+      <div class="meta">A short note on grid-aware electrification decisions</div>
+
+      <p>
+        In many organizations, electrification decisions are still made asset by asset. A site adds
+        photovoltaics, then EV chargers, then perhaps storage, often in separate steps and for valid
+        short-term reasons. The difficulty is that these choices interact. What looks sensible from
+        the perspective of each asset may create a very different outcome once they operate together.
+      </p>
+
+      <p>
+        This is especially relevant when local network capacity is limited. In that context, the issue
+        is not only annual energy consumption or annual self-consumption. The real question is how
+        demand, local generation, charging patterns, and control strategies coincide over time.
+        Constraints are usually created by coincidence, not by annual totals.
+      </p>
+
+      <h2>Why this matters</h2>
+
+      <p>
+        Many grid-related problems appear late in the process. An organization may already have invested
+        in equipment before it realizes that peak demand, feeder loading, or transformer stress have become
+        limiting factors. At that point, the discussion often shifts quickly toward reinforcement. In some
+        cases that is necessary. In many others, there is still room to manage the problem through flexibility.
+      </p>
+
+      <p>
+        Flexibility can take different forms: battery control, smart charging, staggered operation of loads,
+        temporary curtailment, or a different coordination between local production and consumption. The key
+        point is that these options should be assessed before constraints become acute, not after.
+      </p>
+
+      <h2>What should be evaluated early</h2>
+
+      <ul>
+        <li>How much of the issue is driven by short-duration peaks rather than sustained overload?</li>
+        <li>Whether charging or storage can be shifted without disrupting core operations.</li>
+        <li>How much operational value flexibility creates under existing tariffs and local conditions.</li>
+        <li>Whether the same investment behaves differently under different control strategies.</li>
+      </ul>
+
+      <p>
+        These are not only technical questions. They affect investment timing, expected returns, and the
+        type of infrastructure that becomes necessary. They also shape whether a site remains adaptable as
+        more electrification is added later.
+      </p>
+
+      <h2>A practical implication</h2>
+
+      <p>
+        Before adding new assets, it is often worth carrying out a grid-aware flexibility assessment based
+        on measured or representative high-resolution data. Even a focused scenario analysis can reveal
+        whether the main bottleneck is energy, power, timing, control, or user behavior. That distinction
+        matters because each one points to a different solution.
+      </p>
+
+      <p>
+        In practice, this means that decisions on PV, storage, EV charging, and electrification should not
+        be separated from decisions on control and local network impacts. A technically sound transition is
+        not only about installing cleaner assets. It is about ensuring they work together under real operating
+        conditions.
+      </p>
+
+      <h2>Closing point</h2>
+
+      <p>
+        The value of flexibility is often highest before reinforcement becomes urgent, because that is when
+        it can still shape the design of the system rather than merely react to its constraints. For that
+        reason, flexibility assessment should be part of early planning, not an afterthought.
+      </p>
+    </article>
+  </main>
+
+  <footer class="wrap">
+    <div>Your Name · Energy systems, flexibility, and renewable integration</div>
+  </footer>
+</body>
+</html>
