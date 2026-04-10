@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Energy Systems & Renewable Transition</title>
+  <meta name="description" content="Research, advisory, and consulting on renewable energy systems, storage, flexibility, and grid integration." />
+  <style>
+    :root {
+      --bg: #f7f9fb;
+      --text: #1d2939;
+      --muted: #475467;
+      --line: #d0d5dd;
+      --card: #ffffff;
+      --accent: #0f766e;
+      --accent-2: #134e4a;
+      --max: 980px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap {
+      width: min(var(--max), calc(100% - 2rem));
+      margin: 0 auto;
+    }
+    header {
+      background: linear-gradient(135deg, #ecfdf3 0%, #eff8ff 100%);
+      border-bottom: 1px solid var(--line);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      font-size: 0.95rem;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .hero {
+      padding: 4.5rem 0 3.5rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      line-height: 1.1;
+      margin: 0 0 1rem;
+      max-width: 12ch;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 760px;
+      color: var(--muted);
+      margin: 0 0 1.5rem;
+    }
+    .cta {
+      display: flex;
+      gap: 0.9rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.85rem 1.1rem;
+      border-radius: 999px;
+      text-decoration: none;
+      border: 1px solid var(--accent);
+      font-weight: 600;
+    }
+    .btn.primary {
+      background: var(--accent);
+      color: white;
+    }
+    .btn.secondary {
+      color: var(--accent-2);
+      background: transparent;
+    }
+    section {
+      padding: 3rem 0;
+    }
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+    .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+    .grid-2 {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 1.2rem;
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.05rem;
+    }
+    .small {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+      margin: 0.6rem 0 0;
+    }
+    .project {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 1rem;
+    }
+    .project:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 2rem 0 3rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    @media (max-width: 640px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">Your Name</div>
+        <div>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <h1>Energy transition research and advisory</h1>
+        <p>
+          I work at the intersection of renewable energy systems, storage, flexibility, grid integration,
+          and decision support. This site presents my current work, selected projects, and advisory services
+          for institutions and enterprises navigating the transition to cleaner energy systems.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:your.email@example.com">Get in touch</a>
+          <a class="btn secondary" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="about">
+      <h2>About</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <p>
+            I am a researcher and advisor working on renewable energy integration, storage,
+            flexibility, local energy systems, and data-driven tools for decision support.
+            My work connects technical analysis with practical implementation challenges.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Core topics</h3>
+          <ul>
+            <li>Renewable integration and flexibility</li>
+            <li>Battery storage and vehicle-to-grid</li>
+            <li>Low-voltage grids and congestion</li>
+            <li>Energy communities and local markets</li>
+            <li>Decision support tools for the transition</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2>What I work on</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Research</h3>
+          <p class="small">Models, publications, and applied analysis on energy systems, storage, grids, and flexibility.</p>
+        </div>
+        <div class="card">
+          <h3>Tools</h3>
+          <p class="small">Data-driven and web-based tools to support planning, analysis, and strategic energy decisions.</p>
+        </div>
+        <div class="card">
+          <h3>Advisory</h3>
+          <p class="small">Support for organizations assessing renewable adoption, storage, EV integration, and system impacts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>How I can help</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>For enterprises</h3>
+          <ul>
+            <li>Assessment of renewable integration options</li>
+            <li>Storage and flexibility opportunity mapping</li>
+            <li>EV charging and fleet electrification strategy</li>
+            <li>Energy data analysis and scenario evaluation</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>For public and research actors</h3>
+          <ul>
+            <li>Project design and technical scoping</li>
+            <li>Decision-support frameworks</li>
+            <li>Urban and district energy transition studies</li>
+            <li>Research translation for non-technical stakeholders</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Selected current work</h2>
+      <div class="card">
+        <div class="project">
+          <h3>Project title 1</h3>
+          <p class="small">One short paragraph on what the project does, why it matters, and what your role is.</p>
+        </div>
+        <div class="project">
+          <h3>Project title 2</h3>
+          <p class="small">One short paragraph on the technical or strategic challenge and the contribution.</p>
+        </div>
+        <div class="project">
+          <h3>Project title 3</h3>
+          <p class="small">One short paragraph linking the work to practical energy transition needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>
+          If you are interested in collaboration, consulting, speaking, or research partnerships,
+          contact me at <a href="mailto:your.email@example.com">your.email@example.com</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>Your Name · Energy Systems, Storage, Grids, and Renewable Transition</div>
+    </div>
+  </footer>
+</body>
+</html>
