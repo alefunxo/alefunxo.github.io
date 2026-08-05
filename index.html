@@ -6,202 +6,21 @@
   <title>Alejandro Pena-Bello | Renewable Integration, Flexibility, and Grid-Aware Energy Decisions</title>
   <meta
     name="description"
-    content="Research, advisory, and applied analysis on renewable integration, storage, electric mobility, flexibility, and grid-aware energy decisions."
+    content="Researcher and advisor working on renewable integration, storage, electric mobility, flexibility, and grid-aware energy decisions."
   />
-  <style>
-    :root {
-      --bg: #f7f9fb;
-      --text: #1d2939;
-      --muted: #475467;
-      --line: #d0d5dd;
-      --card: #ffffff;
-      --accent: #0f766e;
-      --accent-2: #134e4a;
-      --max: 980px;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    .wrap {
-      width: min(var(--max), calc(100% - 2rem));
-      margin: 0 auto;
-    }
-    header {
-      background: linear-gradient(135deg, #ecfdf3 0%, #eff8ff 100%);
-      border-bottom: 1px solid var(--line);
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 0;
-      font-size: 0.95rem;
-    }
-    nav a {
-      color: var(--text);
-      text-decoration: none;
-      margin-left: 1rem;
-    }
-    nav a:hover { color: var(--accent); }
-    .brand {
-      font-weight: 700;
-      letter-spacing: 0.02em;
-    }
-    .hero {
-      padding: 4.5rem 0 3.5rem;
-    }
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      line-height: 1.1;
-      margin: 0 0 1rem;
-      max-width: 13ch;
-    }
-    .hero p {
-      font-size: 1.1rem;
-      max-width: 780px;
-      color: var(--muted);
-      margin: 0 0 1.5rem;
-    }
-    .cta {
-      display: flex;
-      gap: 0.9rem;
-      flex-wrap: wrap;
-    }
-    .btn {
-      display: inline-block;
-      padding: 0.85rem 1.1rem;
-      border-radius: 999px;
-      text-decoration: none;
-      border: 1px solid var(--accent);
-      font-weight: 600;
-      transition: 0.2s ease;
-    }
-    .btn.primary {
-      background: var(--accent);
-      color: white;
-    }
-    .btn.primary:hover {
-      background: var(--accent-2);
-      border-color: var(--accent-2);
-    }
-    .btn.secondary {
-      color: var(--accent-2);
-      background: transparent;
-    }
-    .btn.secondary:hover {
-      background: #ecfdf3;
-    }
-    section {
-      padding: 3rem 0;
-    }
-    h2 {
-      font-size: 1.65rem;
-      margin-bottom: 1rem;
-    }
-    .intro {
-      max-width: 760px;
-      color: var(--muted);
-      margin-bottom: 1.25rem;
-    }
-    .grid {
-      display: grid;
-      gap: 1rem;
-    }
-    .grid-3 {
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    }
-    .grid-2 {
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 1.2rem;
-    }
-    .card h3 {
-      margin-top: 0;
-      font-size: 1.05rem;
-    }
-    .small {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-    ul {
-      padding-left: 1.2rem;
-      margin: 0.6rem 0 0;
-    }
-    .project {
-      padding-bottom: 1rem;
-      border-bottom: 1px solid var(--line);
-      margin-bottom: 1rem;
-    }
-    .project:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-    .highlight-box {
-      background: #ffffff;
-      border: 1px solid var(--line);
-      border-left: 5px solid var(--accent);
-      border-radius: 14px;
-      padding: 1.2rem 1.2rem 1rem;
-    }
-    .highlight-box p {
-      margin-top: 0;
-      margin-bottom: 0.8rem;
-    }
-    .contact-list a,
-    .project a,
-    .card a,
-    footer a {
-      color: var(--accent-2);
-      text-decoration: none;
-    }
-    .contact-list a:hover,
-    .project a:hover,
-    .card a:hover,
-    footer a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      border-top: 1px solid var(--line);
-      padding: 2rem 0 3rem;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-    @media (max-width: 640px) {
-      nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-      }
-      nav a {
-        margin-left: 0;
-        margin-right: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
   <header>
     <div class="wrap">
       <nav>
-        <div class="brand">Alejandro Pena-Bello</div>
-        <div>
-          <a href="#about">About</a>
-          <a href="#decisions">Decisions</a>
-          <a href="#work">Work</a>
-          <a href="#projects">Projects</a>
-          <a href="#insights">Insights</a>
-          <a href="#contact">Contact</a>
+        <a class="brand" href="index.html">Alejandro Pena-Bello</a>
+        <div class="links">
+          <a href="index.html" class="active">Home</a>
+          <a href="cv.html">CV &amp; Publications</a>
+          <a href="projects.html">Projects</a>
+          <a href="consulting.html">Consulting</a>
+          <a href="contact.html">Contact</a>
         </div>
       </nav>
 
@@ -213,8 +32,8 @@
           that analysis can support better decisions for enterprises, public actors, and research partners.
         </p>
         <div class="cta">
-          <a class="btn primary" href="mailto:apenab13@gmail.com">Get in touch</a>
-          <a class="btn secondary" href="https://www.linkedin.com/in/alejandro-pena-bello/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn primary" href="contact.html">Get in touch</a>
+          <a class="btn secondary" href="cv.html">View CV &amp; publications</a>
         </div>
       </div>
     </div>
@@ -290,77 +109,39 @@
           <p class="small">
             Support for organizations assessing renewable adoption, storage strategies, EV integration,
             flexibility options, and grid-related impacts.
+            <a href="consulting.html">See consulting →</a>
           </p>
         </div>
       </div>
     </section>
 
-    <section id="services">
-      <h2>How I can help</h2>
+    <section id="featured-work">
+      <h2>Featured work</h2>
+      <p class="intro">Two tools that put this research into practice.</p>
       <div class="grid grid-2">
-        <div class="card">
-          <h3>For enterprises</h3>
-          <ul>
-            <li>Assessment of renewable integration strategies</li>
-            <li>Evaluation of storage and flexibility opportunities</li>
-            <li>EV charging and fleet electrification analysis</li>
-            <li>Energy data analysis and scenario comparison</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>For public and research actors</h3>
-          <ul>
-            <li>Technical support in project design and evaluation</li>
-            <li>Development of decision-support methodologies</li>
-            <li>Urban and district energy system analysis</li>
-            <li>Translation of technical results for stakeholders</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2>Selected work</h2>
-      <div class="card">
-        <div class="project">
-          <h3>Battery optimization and flexibility analysis</h3>
+        <div class="card project-card">
+          <span class="badge">Live tool</span>
+          <h3>PV-advisor</h3>
           <p class="small">
-            Development of models to quantify the economic and operational value of battery storage
-            under different tariffs, flexibility strategies, and local constraints. This type of work
-            supports decisions on whether and how storage should be deployed.
+            A backend-free web app that screens residential PV and battery investments &mdash; with heat
+            pump, EV, and air-conditioning add-ons &mdash; across 1,210 towns and cities in the EU-27, UK,
+            Switzerland, and Norway.
           </p>
+          <div class="cta">
+            <a class="btn secondary" href="projects.html">View project</a>
+          </div>
         </div>
-        <div class="project">
-          <h3>EV integration and grid impacts in low-voltage networks</h3>
+        <div class="card project-card">
+          <span class="badge">In progress</span>
+          <h3>Screen-project</h3>
           <p class="small">
-            Analysis of EV charging and vehicle-to-grid operation under network constraints and user
-            preferences, with a focus on how electrification affects peak loading, congestion, and
-            flexibility potential.
+            A Streamlit building-simulation application for configuring buildings and scenarios and
+            running MILP battery, EV, and heat-pump dispatch optimization.
           </p>
+          <div class="cta">
+            <a class="btn secondary" href="projects.html">View project</a>
+          </div>
         </div>
-        <div class="project">
-          <h3>Local energy systems and Positive Energy Districts</h3>
-          <p class="small">
-            Work on district-scale energy systems linking technical modeling, planning questions,
-            and transition strategies for local authorities and project partners.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="insights">
-      <h2>Insights</h2>
-      <div class="card">
-        <h3>Why flexibility should be assessed before local grid constraints become critical</h3>
-        <p class="small">
-          Electrification often arrives faster than local network reinforcement. For many organizations,
-          the first question is not only how much PV, storage, or EV charging should be added, but how
-          these choices interact with existing constraints and operating patterns.
-        </p>
-        <p class="small">
-          A short note on this topic is available here:
-          <a href="insight-grid-flexibility.html">Read the insight piece</a>
-        </p>
       </div>
     </section>
 
@@ -371,16 +152,23 @@
           If you are interested in collaboration, consulting, speaking, or research partnerships,
           feel free to get in touch.
         </p>
-        <p>Email: <a href="mailto:apenab13@gmail.com">apenab13@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/alejandro-pena-bello/" target="_blank" rel="noopener noreferrer">your profile</a></p>
-        <p>GitHub: <a href="https://github.com/alefunxo" target="_blank" rel="noopener noreferrer">alefunxo</a></p>
+        <div class="cta">
+          <a class="btn primary" href="contact.html">Go to contact page</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="wrap">
-      <div>Alejandro Pena-Bello · Renewable integration, storage, electric mobility, and grid-aware energy decisions</div>
+      <div>Alejandro Pena-Bello &middot; Renewable integration, storage, electric mobility, and grid-aware energy decisions</div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV &amp; Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="consulting.html">Consulting</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
   </footer>
 </body>

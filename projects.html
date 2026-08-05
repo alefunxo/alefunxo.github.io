@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Alejandro Pena-Bello</title>
+  <meta
+    name="description"
+    content="Applied tools from Alejandro Pena-Bello's research: PV-advisor, a residential PV and battery screening tool, and the building simulation project."
+  />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="index.html">Alejandro Pena-Bello</a>
+        <div class="links">
+          <a href="index.html">Home</a>
+          <a href="cv.html">CV &amp; Publications</a>
+          <a href="projects.html" class="active">Projects</a>
+          <a href="consulting.html">Consulting</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+
+      <div class="page-header">
+        <h1>Projects</h1>
+        <p>Tools that turn the research into something usable &mdash; for homeowners screening a PV investment, or for teams modeling building-level energy systems.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="pv-advisor">
+      <div class="card project-card">
+        <span class="badge">Live tool</span>
+        <h3>PV-advisor</h3>
+        <p class="small">
+          A static, backend-free web app that helps European homeowners screen whether residential solar
+          PV &mdash; with or without batteries &mdash; is financially viable, and how adding a heat pump,
+          an electric vehicle, or air conditioning changes the economics. It runs entirely in the browser
+          on precomputed solar irradiance and temperature data (PVGIS, GeoNames), covering 1,210 towns and
+          cities across the EU-27, UK, Switzerland, and Norway. It is explicitly a screening tool, not an
+          engineering study.
+        </p>
+        <div class="tech-tags">
+          <span>Vanilla JavaScript</span>
+          <span>HTML/CSS</span>
+          <span>No backend</span>
+          <span>PVGIS data</span>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="https://apenabell.com/PV-advisor/" target="_blank" rel="noopener noreferrer">Open PV-advisor</a>
+          <a class="btn secondary" href="https://github.com/alefunxo/PV-advisor" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen-project">
+      <div class="card project-card">
+        <span class="badge">In progress &middot; opening source soon</span>
+        <h3>Screen-project &mdash; Building Simulation Application</h3>
+        <p class="small">
+          A Streamlit-based building energy simulation application for configuring buildings, defining
+          simulation scenarios, importing Swiss building data, and visualizing results. At its core, a
+          mixed-integer linear program (built with Pyomo) dispatches battery, EV, and heat-pump operation
+          for each scenario. The codebase follows a layered architecture (frontend, application, domain,
+          infrastructure) so simulation logic stays independent of the interface, and it supports English,
+          French, German, and Italian. Currently developed in a private university repository; it will move
+          to GitHub as an open-source project shortly.
+        </p>
+        <div class="tech-tags">
+          <span>Streamlit</span>
+          <span>Pyomo &middot; MILP</span>
+          <span>Python</span>
+          <span>Apache 2.0</span>
+        </div>
+        <div class="cta">
+          <a class="btn secondary" href="https://gitlab.hevs.ch/ted/screen_project" target="_blank" rel="noopener noreferrer">View repository (private)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>Alejandro Pena-Bello &middot; Renewable integration, storage, electric mobility, and grid-aware energy decisions</div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV &amp; Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="consulting.html">Consulting</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

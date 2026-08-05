@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Alejandro Pena-Bello</title>
+  <meta
+    name="description"
+    content="Get in touch about collaboration, consulting, speaking, or research partnerships."
+  />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="index.html">Alejandro Pena-Bello</a>
+        <div class="links">
+          <a href="index.html">Home</a>
+          <a href="cv.html">CV &amp; Publications</a>
+          <a href="projects.html">Projects</a>
+          <a href="consulting.html">Consulting</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+      </nav>
+
+      <div class="page-header">
+        <h1>Contact</h1>
+        <p>If you are interested in collaboration, consulting, speaking, or research partnerships, feel free to get in touch.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="contact-form">
+      <div class="card">
+        <form class="contact-form" id="contactForm">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn primary">Send message</button>
+            <p class="form-note">This opens a pre-filled draft in your email app addressed to apenab13@gmail.com &mdash; no message is sent from this page directly.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="direct-links">
+      <h2>Or reach me directly</h2>
+      <div class="card contact-list">
+        <p>Email: <a href="mailto:apenab13@gmail.com">apenab13@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/alejandro-pena-bello/" target="_blank" rel="noopener noreferrer">alejandro-pena-bello</a></p>
+        <p>GitHub: <a href="https://github.com/alefunxo" target="_blank" rel="noopener noreferrer">alefunxo</a></p>
+        <p>ORCID: <a href="https://orcid.org/0000-0001-5518-8467" target="_blank" rel="noopener noreferrer">0000-0001-5518-8467</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>Alejandro Pena-Bello &middot; Renewable integration, storage, electric mobility, and grid-aware energy decisions</div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV &amp; Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="consulting.html">Consulting</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var subject = document.getElementById('subject').value;
+      var message = document.getElementById('message').value;
+
+      var body = 'From: ' + name + ' (' + email + ')\n\n' + message;
+      var mailto = 'mailto:apenab13@gmail.com'
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body=' + encodeURIComponent(body);
+
+      window.location.href = mailto;
+    });
+  </script>
+</body>
+</html>
