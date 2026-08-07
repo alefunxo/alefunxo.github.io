@@ -8,13 +8,31 @@
     name="description"
     content="Get in touch about collaboration, consulting, speaking, or research partnerships."
   />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+  <meta name="theme-color" content="#0e1a20" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
+  <div class="rail" aria-hidden="true"><span>Write to me</span></div>
+
   <header>
     <div class="wrap">
       <nav>
-        <a class="brand" href="index.html">Alejandro Pena-Bello</a>
+        <a class="brand" href="index.html">
+          <svg class="mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <rect x="2" y="15" width="28" height="11" rx="5.5" />
+            <path d="M9.5 15 18 4.5l5.2 3.1L20.3 15" />
+            <path class="mark-cross" d="M24 18.1v5.2M21.4 20.7h5.2" />
+          </svg>
+          <span class="brand-text">
+            <span class="brand-name">Alejandro Pena-Bello</span>
+            <span class="brand-tag">Renewables &middot; Storage &middot; Grids</span>
+          </span>
+        </a>
         <div class="links">
           <a href="index.html">Home</a>
           <a href="cv.html">CV &amp; Publications</a>
@@ -25,6 +43,7 @@
       </nav>
 
       <div class="page-header">
+        <p class="eyebrow">Correspondence</p>
         <h1>Contact</h1>
         <p>If you are interested in collaboration, consulting, speaking, or research partnerships, feel free to get in touch.</p>
       </div>
@@ -33,32 +52,48 @@
 
   <main class="wrap">
     <section id="contact-form">
-      <div class="card">
-        <form class="contact-form" id="contactForm">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Send a message</h3>
+          <form class="contact-form" id="contactForm">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div>
+              <label for="email">Your email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div>
+              <button type="submit" class="btn primary">Send message</button>
+              <p class="form-note">This opens a pre-filled draft in your email app addressed to alejandro@apenabell.com &mdash; no message is sent from this page directly.</p>
+            </div>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>Or reach me directly</h3>
+          <dl class="spec">
+            <div><dt>Email</dt><dd><a href="mailto:alejandro@apenabell.com">alejandro@apenabell.com</a></dd></div>
+            <div><dt>Based in</dt><dd>Suisse romande, Switzerland</dd></div>
+          </dl>
+          <div class="links-row">
+            <a class="pill" href="https://www.linkedin.com/in/alejandro-pena-bello/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="pill" href="https://scholar.google.com/citations?user=14-5Zz8AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a class="pill" href="https://github.com/alefunxo" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="pill" href="https://orcid.org/0000-0001-5518-8467" target="_blank" rel="noopener noreferrer">ORCID</a>
           </div>
-          <div>
-            <label for="email">Your email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div>
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required />
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <div>
-            <button type="submit" class="btn primary">Send message</button>
-            <p class="form-note">This opens a pre-filled draft in your email app addressed to alejandro@apenabell.com &mdash; no message is sent from this page directly.</p>
-          </div>
-        </form>
+        </div>
       </div>
     </section>
-
   </main>
 
   <footer>
@@ -71,6 +106,7 @@
         <a href="consulting.html">Consulting</a>
         <a href="contact.html">Contact</a>
       </div>
+      <div class="colophon">Suisse romande, Switzerland &middot; Set in Inter and JetBrains Mono</div>
     </div>
   </footer>
 

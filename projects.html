@@ -8,13 +8,31 @@
     name="description"
     content="Applied tools from Alejandro Pena-Bello's research: PV-advisor, a residential PV and battery screening tool, and the building simulation project."
   />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+  <meta name="theme-color" content="#0e1a20" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
+  <div class="rail" aria-hidden="true"><span>Applied tools &middot; Two entries</span></div>
+
   <header>
     <div class="wrap">
       <nav>
-        <a class="brand" href="index.html">Alejandro Pena-Bello</a>
+        <a class="brand" href="index.html">
+          <svg class="mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <rect x="2" y="15" width="28" height="11" rx="5.5" />
+            <path d="M9.5 15 18 4.5l5.2 3.1L20.3 15" />
+            <path class="mark-cross" d="M24 18.1v5.2M21.4 20.7h5.2" />
+          </svg>
+          <span class="brand-text">
+            <span class="brand-name">Alejandro Pena-Bello</span>
+            <span class="brand-tag">Renewables &middot; Storage &middot; Grids</span>
+          </span>
+        </a>
         <div class="links">
           <a href="index.html">Home</a>
           <a href="cv.html">CV &amp; Publications</a>
@@ -25,6 +43,7 @@
       </nav>
 
       <div class="page-header">
+        <p class="eyebrow">Built work</p>
         <h1>Projects</h1>
         <p>Tools that turn the research into something usable &mdash; for homeowners screening a PV investment, or for teams modeling building-level energy systems.</p>
       </div>
@@ -36,48 +55,70 @@
       <div class="card project-card">
         <span class="badge">Live tool</span>
         <h3>PV-advisor</h3>
-        <p class="small">
-          A static, backend-free web app that helps European homeowners screen whether residential solar
-          PV &mdash; with or without batteries &mdash; is financially viable, and how adding a heat pump,
-          an electric vehicle, or air conditioning changes the economics. It runs entirely in the browser
-          on precomputed solar irradiance and temperature data (PVGIS, GeoNames), covering 1,210 towns and
-          cities across the EU-27, UK, Switzerland, and Norway. It is explicitly a screening tool, not an
-          engineering study.
-        </p>
-        <div class="tech-tags">
-          <span>Vanilla JavaScript</span>
-          <span>HTML/CSS</span>
-          <span>No backend</span>
-          <span>PVGIS data</span>
-        </div>
-        <div class="cta">
-          <a class="btn primary" href="https://apenabell.com/PV-advisor/" target="_blank" rel="noopener noreferrer">Open PV-advisor</a>
-          <a class="btn secondary" href="https://github.com/alefunxo/PV-advisor" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        <div class="case">
+          <div class="case-body">
+            <p class="small">
+              A static, backend-free web app that helps European homeowners screen whether residential solar
+              PV &mdash; with or without batteries &mdash; is financially viable, and how adding a heat pump,
+              an electric vehicle, or air conditioning changes the economics. It runs entirely in the browser
+              on precomputed solar irradiance and temperature data (PVGIS, GeoNames), covering 1,210 towns and
+              cities across the EU-27, UK, Switzerland, and Norway. It is explicitly a screening tool, not an
+              engineering study.
+            </p>
+            <div class="tech-tags">
+              <span>Vanilla JavaScript</span>
+              <span>HTML/CSS</span>
+              <span>No backend</span>
+              <span>PVGIS data</span>
+            </div>
+            <div class="cta">
+              <a class="btn primary" href="https://apenabell.com/PV-advisor/" target="_blank" rel="noopener noreferrer">Open PV-advisor</a>
+              <a class="btn secondary" href="https://github.com/alefunxo/PV-advisor" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+            </div>
+          </div>
+          <dl class="spec">
+            <div><dt>Status</dt><dd>Live</dd></div>
+            <div><dt>Coverage</dt><dd>1,210 towns &amp; cities</dd></div>
+            <div><dt>Region</dt><dd>EU-27, UK, CH, NO</dd></div>
+            <div><dt>Data</dt><dd>PVGIS &middot; GeoNames</dd></div>
+            <div><dt>Runs on</dt><dd>Browser only</dd></div>
+          </dl>
         </div>
       </div>
     </section>
 
     <section id="screen-project">
       <div class="card project-card">
-        <span class="badge">In progress &middot; opening source soon</span>
+        <span class="badge muted">In progress &middot; opening source soon</span>
         <h3>Screen-project &mdash; Building Simulation Application</h3>
-        <p class="small">
-          A Streamlit-based building energy simulation application for configuring buildings, defining
-          simulation scenarios, importing Swiss building data, and visualizing results. At its core, a
-          mixed-integer linear program (built with Pyomo) dispatches battery, EV, and heat-pump operation
-          for each scenario. The codebase follows a layered architecture (frontend, application, domain,
-          infrastructure) so simulation logic stays independent of the interface, and it supports English,
-          French, German, and Italian. Currently developed in a private university repository; it will move
-          to GitHub as an open-source project shortly.
-        </p>
-        <div class="tech-tags">
-          <span>Streamlit</span>
-          <span>Pyomo &middot; MILP</span>
-          <span>Python</span>
-          <span>Apache 2.0</span>
-        </div>
-        <div class="cta">
-          <a class="btn secondary" href="https://gitlab.hevs.ch/ted/screen_project" target="_blank" rel="noopener noreferrer">View repository (private)</a>
+        <div class="case">
+          <div class="case-body">
+            <p class="small">
+              A Streamlit-based building energy simulation application for configuring buildings, defining
+              simulation scenarios, importing Swiss building data, and visualizing results. At its core, a
+              mixed-integer linear program (built with Pyomo) dispatches battery, EV, and heat-pump operation
+              for each scenario. The codebase follows a layered architecture (frontend, application, domain,
+              infrastructure) so simulation logic stays independent of the interface, and it supports English,
+              French, German, and Italian. Currently developed in a private university repository; it will move
+              to GitHub as an open-source project shortly.
+            </p>
+            <div class="tech-tags">
+              <span>Streamlit</span>
+              <span>Pyomo &middot; MILP</span>
+              <span>Python</span>
+              <span>Apache 2.0</span>
+            </div>
+            <div class="cta">
+              <a class="btn secondary" href="https://gitlab.hevs.ch/ted/screen_project" target="_blank" rel="noopener noreferrer">View repository (private) &rarr;</a>
+            </div>
+          </div>
+          <dl class="spec">
+            <div><dt>Status</dt><dd>In progress</dd></div>
+            <div><dt>Core</dt><dd>MILP dispatch (Pyomo)</dd></div>
+            <div><dt>Assets</dt><dd>Battery &middot; EV &middot; heat pump</dd></div>
+            <div><dt>Interface</dt><dd>Streamlit, 4 languages</dd></div>
+            <div><dt>License</dt><dd>Apache 2.0</dd></div>
+          </dl>
         </div>
       </div>
     </section>
@@ -93,6 +134,7 @@
         <a href="consulting.html">Consulting</a>
         <a href="contact.html">Contact</a>
       </div>
+      <div class="colophon">Suisse romande, Switzerland &middot; Set in Inter and JetBrains Mono</div>
     </div>
   </footer>
 </body>

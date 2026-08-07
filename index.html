@@ -8,13 +8,31 @@
     name="description"
     content="Researcher and advisor working on renewable integration, storage, electric mobility, flexibility, and grid-aware energy decisions."
   />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+  <meta name="theme-color" content="#0e1a20" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
+  <div class="rail" aria-hidden="true"><span>Energy systems &middot; Suisse romande, CH</span></div>
+
   <header>
     <div class="wrap">
       <nav>
-        <a class="brand" href="index.html">Alejandro Pena-Bello</a>
+        <a class="brand" href="index.html">
+          <svg class="mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <rect x="2" y="15" width="28" height="11" rx="5.5" />
+            <path d="M9.5 15 18 4.5l5.2 3.1L20.3 15" />
+            <path class="mark-cross" d="M24 18.1v5.2M21.4 20.7h5.2" />
+          </svg>
+          <span class="brand-text">
+            <span class="brand-name">Alejandro Pena-Bello</span>
+            <span class="brand-tag">Renewables &middot; Storage &middot; Grids</span>
+          </span>
+        </a>
         <div class="links">
           <a href="index.html" class="active">Home</a>
           <a href="cv.html">CV &amp; Publications</a>
@@ -25,24 +43,51 @@
       </nav>
 
       <div class="hero">
-        <h1>Renewable integration, flexibility, and grid-aware energy decisions</h1>
-        <p>
-          I work at the intersection of renewable energy, storage, electric mobility, and power systems.
-          My focus is on how these elements interact at building, district, and network level, and how
-          that analysis can support better decisions for enterprises, public actors, and research partners.
-        </p>
-        <div class="cta">
-          <a class="btn primary" href="contact.html">Get in touch</a>
-          <a class="btn secondary" href="cv.html">View CV &amp; publications</a>
+        <div class="hero-main">
+          <p class="eyebrow">Researcher &amp; advisor</p>
+          <h1>Renewable integration, flexibility, and grid-aware energy decisions</h1>
+          <p class="lede">
+            I work at the intersection of renewable energy, storage, electric mobility, and power systems.
+            My focus is on how these elements interact at building, district, and network level, and how
+            that analysis can support better decisions for enterprises, public actors, and research partners.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="contact.html">Get in touch</a>
+            <a class="btn secondary" href="cv.html">View CV &amp; publications &rarr;</a>
+          </div>
         </div>
+
+        <aside class="hero-aside">
+          <span class="pin" aria-hidden="true"></span>
+          <h2>At a glance</h2>
+          <dl>
+            <div>
+              <dt>Position</dt>
+              <dd>Senior Academic Associate, HES-SO Valais</dd>
+            </div>
+            <div>
+              <dt>Doctorate</dt>
+              <dd>Ph.D. in Energy Storage, University of Geneva</dd>
+            </div>
+            <div>
+              <dt>Publication record</dt>
+              <dd>1,500+ citations &middot; h-index 13 </dd>
+            </div>
+
+          </dl>
+          <a class="aside-link" href="cv.html">Full CV &rarr;</a>
+        </aside>
       </div>
     </div>
   </header>
 
   <main class="wrap">
     <section id="about">
-      <h2>About</h2>
-      <p class="intro">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2>About</h2>
+      </div>
+      <p class="intro dropcap">
         I am a researcher and advisor working on the integration of distributed energy resources,
         including photovoltaics, battery storage, electric vehicles, and flexibility strategies.
         My work combines modeling, data analysis, and system-level thinking to address questions
@@ -71,7 +116,10 @@
     </section>
 
     <section id="decisions">
-      <h2>What decisions I help inform</h2>
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2>What decisions I help inform</h2>
+      </div>
       <div class="highlight-box">
         <p>I support organizations facing concrete energy transition decisions, including:</p>
         <ul>
@@ -80,7 +128,7 @@
           <li>What flexibility options are available, and what is their operational or economic value?</li>
           <li>How can energy data support better planning, operation, or investment decisions?</li>
         </ul>
-        <p>
+        <p class="small" style="margin-top: 1.2rem;">
           My work combines system-level modeling, scenario evaluation, and quantitative analysis to
           provide clear evidence for these questions.
         </p>
@@ -88,35 +136,65 @@
     </section>
 
     <section id="work">
-      <h2>What I work on</h2>
-      <div class="grid grid-3">
-        <div class="card">
-          <h3>Research</h3>
-          <p class="small">
-            Development of models and analysis frameworks to understand how renewables, storage,
-            EVs, and electricity networks interact under technical and behavioral constraints.
-          </p>
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2>What I work on</h2>
+      </div>
+      <p class="intro">Three tools that fold out of the same body of work, and that are rarely used alone.</p>
+      <div class="toolkit">
+        <div class="tool">
+          <svg class="tool-icon" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+            <path d="M8 30 21 9l6 3.6-3.4 17.4z" />
+            <path d="M8 30h19.6" />
+            <path d="M21 9v21" />
+          </svg>
+          <div>
+            <h3>Research</h3>
+            <p class="small">
+              Development of models and analysis frameworks to understand how renewables, storage,
+              EVs, and electricity networks interact under technical and behavioral constraints.
+            </p>
+          </div>
         </div>
-        <div class="card">
-          <h3>Tools</h3>
-          <p class="small">
-            Design of data-driven tools to support planning, scenario comparison, and decision-making
-            in distributed and urban energy systems.
-          </p>
+        <div class="tool">
+          <svg class="tool-icon" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+            <path d="M14 8h12v6l-4 3v18h-4V17l-4-3z" />
+            <path d="M14 11h12" />
+            <path d="M18 24h4" />
+          </svg>
+          <div>
+            <h3>Tools</h3>
+            <p class="small">
+              Design of data-driven tools to support planning, scenario comparison, and decision-making
+              in distributed and urban energy systems.
+            </p>
+          </div>
         </div>
-        <div class="card">
-          <h3>Advisory</h3>
-          <p class="small">
-            Support for organizations assessing renewable adoption, storage strategies, EV integration,
-            flexibility options, and grid-related impacts.
-            <a href="consulting.html">See consulting →</a>
-          </p>
+        <div class="tool">
+          <svg class="tool-icon" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+            <path d="M20 7v5" />
+            <path d="M20 12 9 32" />
+            <path d="M20 12l11 20" />
+            <path d="M14 24h12" />
+            <circle cx="20" cy="9" r="2.4" />
+          </svg>
+          <div>
+            <h3>Advisory</h3>
+            <p class="small">
+              Support for organizations assessing renewable adoption, storage strategies, EV integration,
+              flexibility options, and grid-related impacts.
+              <a href="consulting.html">See consulting &rarr;</a>
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="featured-work">
-      <h2>Featured work</h2>
+    <section id="featured-work" class="featured-work">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2>Featured work</h2>
+      </div>
       <p class="intro">Two tools that put this research into practice.</p>
       <div class="grid grid-2">
         <div class="card project-card">
@@ -128,27 +206,30 @@
             Switzerland, and Norway.
           </p>
           <div class="cta">
-            <a class="btn secondary" href="projects.html">View project</a>
+            <a class="btn secondary" href="projects.html">View project &rarr;</a>
           </div>
         </div>
         <div class="card project-card">
-          <span class="badge">In progress</span>
+          <span class="badge muted">In progress</span>
           <h3>Screen-project</h3>
           <p class="small">
             A Streamlit building-simulation application for configuring buildings and scenarios and
             running MILP battery, EV, and heat-pump dispatch optimization.
           </p>
           <div class="cta">
-            <a class="btn secondary" href="projects.html">View project</a>
+            <a class="btn secondary" href="projects.html">View project &rarr;</a>
           </div>
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
-      <div class="card contact-list">
-        <p>
+      <div class="section-head">
+        <span class="section-num">05</span>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-list">
+        <p class="lede">
           If you are interested in collaboration, consulting, speaking, or research partnerships,
           feel free to get in touch.
         </p>
@@ -161,7 +242,8 @@
 
   <footer>
     <div class="wrap">
-      <div>Alejandro Pena-Bello &middot; Renewable integration, storage, electric mobility, and grid-aware energy decisions</div>
+      <div>Alejandro Pena-Bello</div>
+      <div>Renewable integration  &middot; storage &middot;  electric mobility &middot; grid-aware energy decisions</div>
       <div class="footer-nav">
         <a href="index.html">Home</a>
         <a href="cv.html">CV &amp; Publications</a>
@@ -169,6 +251,7 @@
         <a href="consulting.html">Consulting</a>
         <a href="contact.html">Contact</a>
       </div>
+      <div class="colophon">Suisse romande, Switzerland</div>
     </div>
   </footer>
 </body>

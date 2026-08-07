@@ -8,13 +8,31 @@
     name="description"
     content="CV, research experience, and publications of Alejandro Pena-Bello: renewable integration, energy storage, and grid-aware energy decisions."
   />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+  <meta name="theme-color" content="#0e1a20" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
+  <div class="rail" aria-hidden="true"><span>Curriculum vitae &middot; 2026</span></div>
+
   <header>
     <div class="wrap">
       <nav>
-        <a class="brand" href="index.html">Alejandro Pena-Bello</a>
+        <a class="brand" href="index.html">
+          <svg class="mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <rect x="2" y="15" width="28" height="11" rx="5.5" />
+            <path d="M9.5 15 18 4.5l5.2 3.1L20.3 15" />
+            <path class="mark-cross" d="M24 18.1v5.2M21.4 20.7h5.2" />
+          </svg>
+          <span class="brand-text">
+            <span class="brand-name">Alejandro Pena-Bello</span>
+            <span class="brand-tag">Renewables &middot; Storage &middot; Grids</span>
+          </span>
+        </a>
         <div class="links">
           <a href="index.html">Home</a>
           <a href="cv.html" class="active">CV &amp; Publications</a>
@@ -25,6 +43,7 @@
       </nav>
 
       <div class="page-header">
+        <p class="eyebrow">Record</p>
         <h1>CV &amp; Publications</h1>
         <p>Electronic engineer and researcher working on distributed energy resources, storage, and grid-aware electrification. h-index 13, 1,500+ citations, publications including Nature Energy.</p>
         <div class="links-row">
@@ -39,18 +58,25 @@
 
   <main class="wrap">
     <section id="introduction">
-      <h2>Introduction</h2>
-      <p class="intro">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2>Introduction</h2>
+      </div>
+      <p class="intro dropcap">
         Electronic engineer with a strong background in distributed energy resources. Research expertise
         in energy storage and waste-to-energy technology, with publications in recognized international
-        journals, including Nature Energy. Experience building and leading national and European research
+        journals. Experience building and leading national and European research
         proposals &mdash; and supervising
         Bachelor, Master, and Doctoral students. A multidisciplinary approach bridging technical, economic,
         and environmental analysis.
       </p>
     </section>
+
     <section id="education">
-      <h2>Education</h2>
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2>Education</h2>
+      </div>
       <div class="card">
         <div class="entry">
           <div class="entry-head">
@@ -97,8 +123,12 @@
         </div>
       </div>
     </section>
+
     <section id="experience">
-      <h2>Experience</h2>
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2>Experience</h2>
+      </div>
       <div class="card">
         <div class="entry">
           <div class="entry-head">
@@ -150,13 +180,14 @@
       </div>
     </section>
 
-    
-
     <section id="research-projects">
-      <h2>Research projects</h2>
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2>Research projects</h2>
+      </div>
       <div class="card">
         <div class="project">
-          <h3>DUT &mdash; awarded, starts January 2026</h3>
+          <h3>DUT &mdash; awarded, January 2026 - January 2029</h3>
           <p class="small">
             Interdisciplinary methodology to evaluate and implement Positive Energy Districts in Europe,
             integrating energy system modeling, urban planning, and social acceptance. Helped coordinate,
@@ -180,12 +211,14 @@
             the project concept, and wrote the full proposal. Total requested funding: 150,000 CHF (75,000 CHF for HES-SO Valais/Wallis).
           </p>
         </div>
-
       </div>
     </section>
 
     <section id="publications">
-      <h2>Selected publications</h2>
+      <div class="section-head">
+        <span class="section-num">05</span>
+        <h2>Selected publications</h2>
+      </div>
       <p class="intro">1,500+ citations, h-index 13, i10-index 14 (Google Scholar).</p>
       <div class="card">
         <ul class="pub-list">
@@ -222,14 +255,17 @@
             <p class="pub-meta">2021 &middot; 89 citations</p>
           </li>
         </ul>
-        <p class="small" style="margin-top: 1rem;">
-          <a href="https://scholar.google.com/citations?user=14-5Zz8AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">View the full publication list on Google Scholar →</a>
+        <p class="small" style="margin-top: 1.4rem;">
+          <a href="https://scholar.google.com/citations?user=14-5Zz8AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">View the full publication list on Google Scholar &rarr;</a>
         </p>
       </div>
     </section>
 
     <section id="service">
-      <h2>Service &amp; honors</h2>
+      <div class="section-head">
+        <span class="section-num">06</span>
+        <h2>Service &amp; honors</h2>
+      </div>
       <div class="grid grid-2">
         <div class="card">
           <h3>Service to the scientific community</h3>
@@ -251,7 +287,10 @@
     </section>
 
     <section id="skills">
-      <h2>Skills</h2>
+      <div class="section-head">
+        <span class="section-num">07</span>
+        <h2>Skills</h2>
+      </div>
       <div class="grid grid-3">
         <div class="card">
           <h3>IT</h3>
@@ -291,6 +330,7 @@
         <a href="consulting.html">Consulting</a>
         <a href="contact.html">Contact</a>
       </div>
+      <div class="colophon">Suisse romande, Switzerland &middot; Set in Inter and JetBrains Mono</div>
     </div>
   </footer>
 </body>

@@ -8,13 +8,31 @@
     name="description"
     content="Advisory support on renewable integration, storage, EV charging, flexibility, and grid-aware energy decisions for enterprises and public actors."
   />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+  <meta name="theme-color" content="#0e1a20" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
+  <div class="rail" aria-hidden="true"><span>Advisory engagements</span></div>
+
   <header>
     <div class="wrap">
       <nav>
-        <a class="brand" href="index.html">Alejandro Pena-Bello</a>
+        <a class="brand" href="index.html">
+          <svg class="mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <rect x="2" y="15" width="28" height="11" rx="5.5" />
+            <path d="M9.5 15 18 4.5l5.2 3.1L20.3 15" />
+            <path class="mark-cross" d="M24 18.1v5.2M21.4 20.7h5.2" />
+          </svg>
+          <span class="brand-text">
+            <span class="brand-name">Alejandro Pena-Bello</span>
+            <span class="brand-tag">Renewables &middot; Storage &middot; Grids</span>
+          </span>
+        </a>
         <div class="links">
           <a href="index.html">Home</a>
           <a href="cv.html">CV &amp; Publications</a>
@@ -25,6 +43,7 @@
       </nav>
 
       <div class="page-header">
+        <p class="eyebrow">Advisory</p>
         <h1>Consulting</h1>
         <p>
           Alongside my research, I take on focused advisory engagements &mdash; bringing the same
@@ -37,6 +56,10 @@
 
   <main class="wrap">
     <section id="services">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2>Where I help</h2>
+      </div>
       <div class="grid grid-2">
         <div class="card">
           <h3>For enterprises</h3>
@@ -60,7 +83,10 @@
     </section>
 
     <section id="approach">
-      <h2>How engagements typically work</h2>
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2>How engagements typically work</h2>
+      </div>
       <div class="highlight-box">
         <p>
           Most engagements start with a clearly framed question &mdash; should we invest in PV, storage,
@@ -73,8 +99,11 @@
     </section>
 
     <section id="cta">
-      <h2>Get in touch</h2>
-      <p class="intro">If any of this matches a decision you're facing, let's talk.</p>
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2>Get in touch</h2>
+      </div>
+      <p class="lede">If any of this matches a decision you're facing, let's talk.</p>
       <div class="cta">
         <a class="btn primary" href="contact.html">Contact me</a>
       </div>
@@ -91,6 +120,7 @@
         <a href="consulting.html">Consulting</a>
         <a href="contact.html">Contact</a>
       </div>
+      <div class="colophon">Suisse romande, Switzerland &middot; Set in Inter and JetBrains Mono</div>
     </div>
   </footer>
 </body>
