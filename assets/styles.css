@@ -170,11 +170,14 @@ h2 { line-height: 1.14; }
 }
 
 .intro, .lede {
-  max-width: var(--measure);
   color: var(--ink-soft);
   margin-bottom: 1.4rem;
 }
+.intro {
+  max-width: 58rem;
+}
 .lede {
+  max-width: var(--measure);
   font-size: 1.12rem;
   line-height: 1.6;
   color: var(--ink);
